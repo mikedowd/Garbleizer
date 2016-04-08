@@ -8,9 +8,17 @@ using Microsoft.AspNet.Mvc;
 
 namespace garble.Controllers
 {
+	/// <summary>
+	/// API for garble requests
+	/// </summary>
     [Route("api/[controller]")]
     public class GarbleController : Controller
     {
+		/// <summary>
+		/// Returns a garbled version of the word passed in.
+		/// </summary>
+		/// <param name="word">The word</param>
+		/// <returns></returns>
         // GET api/values/5
         [HttpGet("{word}")]
         public string Get(string word)
