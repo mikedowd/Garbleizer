@@ -23,7 +23,7 @@ namespace garble.Controllers
         [HttpGet("{word}")]
         public string Get(string word)
         {
-			return string.Format( $"oiuwq{word}erkjs" );
+			return string.Format( $"oiuwq{word.Substring(0,2)}zxkjhf{word.Substring(2)}erkjs" );
         }
     }
 }
